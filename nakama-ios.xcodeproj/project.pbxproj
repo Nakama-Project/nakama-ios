@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CC6D61D1C2BAA8900293FD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6D61C1C2BAA8900293FD5 /* AppDelegate.swift */; };
+		1CC6D61F1C2BAA8900293FD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6D61E1C2BAA8900293FD5 /* ViewController.swift */; };
+		1CC6D6221C2BAA8900293FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC6D6201C2BAA8900293FD5 /* Main.storyboard */; };
+		1CC6D6241C2BAA8A00293FD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC6D6231C2BAA8A00293FD5 /* Assets.xcassets */; };
+		1CC6D6271C2BAA8A00293FD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC6D6251C2BAA8A00293FD5 /* LaunchScreen.storyboard */; };
+		1CC6D6321C2BAA8C00293FD5 /* nakama_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6D6311C2BAA8C00293FD5 /* nakama_iosTests.swift */; };
+		1CC6D63D1C2BAA8C00293FD5 /* nakama_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6D63C1C2BAA8C00293FD5 /* nakama_iosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CC6D62E1C2BAA8C00293FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC6D6111C2BAA8800293FD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC6D6181C2BAA8900293FD5;
+			remoteInfo = "nakama-ios";
+		};
+		1CC6D6391C2BAA8C00293FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC6D6111C2BAA8800293FD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC6D6181C2BAA8900293FD5;
+			remoteInfo = "nakama-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CC6D6191C2BAA8900293FD5 /* nakama-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nakama-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC6D61C1C2BAA8900293FD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CC6D61E1C2BAA8900293FD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1CC6D6211C2BAA8900293FD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CC6D6231C2BAA8A00293FD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CC6D6261C2BAA8A00293FD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CC6D6281C2BAA8A00293FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC6D62D1C2BAA8C00293FD5 /* nakama-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nakama-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC6D6311C2BAA8C00293FD5 /* nakama_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nakama_iosTests.swift; sourceTree = "<group>"; };
+		1CC6D6331C2BAA8C00293FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC6D6381C2BAA8C00293FD5 /* nakama-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nakama-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC6D63C1C2BAA8C00293FD5 /* nakama_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nakama_iosUITests.swift; sourceTree = "<group>"; };
+		1CC6D63E1C2BAA8C00293FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CC6D6161C2BAA8900293FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC6D62A1C2BAA8C00293FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC6D6351C2BAA8C00293FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CC6D6101C2BAA8800293FD5 = {
+			isa = PBXGroup;
+			children = (
+				1CC6D61B1C2BAA8900293FD5 /* nakama-ios */,
+				1CC6D6301C2BAA8C00293FD5 /* nakama-iosTests */,
+				1CC6D63B1C2BAA8C00293FD5 /* nakama-iosUITests */,
+				1CC6D61A1C2BAA8900293FD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CC6D61A1C2BAA8900293FD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CC6D6191C2BAA8900293FD5 /* nakama-ios.app */,
+				1CC6D62D1C2BAA8C00293FD5 /* nakama-iosTests.xctest */,
+				1CC6D6381C2BAA8C00293FD5 /* nakama-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CC6D61B1C2BAA8900293FD5 /* nakama-ios */ = {
+			isa = PBXGroup;
+			children = (
+				1CC6D61C1C2BAA8900293FD5 /* AppDelegate.swift */,
+				1CC6D61E1C2BAA8900293FD5 /* ViewController.swift */,
+				1CC6D6201C2BAA8900293FD5 /* Main.storyboard */,
+				1CC6D6231C2BAA8A00293FD5 /* Assets.xcassets */,
+				1CC6D6251C2BAA8A00293FD5 /* LaunchScreen.storyboard */,
+				1CC6D6281C2BAA8A00293FD5 /* Info.plist */,
+			);
+			path = "nakama-ios";
+			sourceTree = "<group>";
+		};
+		1CC6D6301C2BAA8C00293FD5 /* nakama-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CC6D6311C2BAA8C00293FD5 /* nakama_iosTests.swift */,
+				1CC6D6331C2BAA8C00293FD5 /* Info.plist */,
+			);
+			path = "nakama-iosTests";
+			sourceTree = "<group>";
+		};
+		1CC6D63B1C2BAA8C00293FD5 /* nakama-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CC6D63C1C2BAA8C00293FD5 /* nakama_iosUITests.swift */,
+				1CC6D63E1C2BAA8C00293FD5 /* Info.plist */,
+			);
+			path = "nakama-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CC6D6181C2BAA8900293FD5 /* nakama-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC6D6411C2BAA8C00293FD5 /* Build configuration list for PBXNativeTarget "nakama-ios" */;
+			buildPhases = (
+				1CC6D6151C2BAA8900293FD5 /* Sources */,
+				1CC6D6161C2BAA8900293FD5 /* Frameworks */,
+				1CC6D6171C2BAA8900293FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nakama-ios";
+			productName = "nakama-ios";
+			productReference = 1CC6D6191C2BAA8900293FD5 /* nakama-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CC6D62C1C2BAA8C00293FD5 /* nakama-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC6D6441C2BAA8C00293FD5 /* Build configuration list for PBXNativeTarget "nakama-iosTests" */;
+			buildPhases = (
+				1CC6D6291C2BAA8C00293FD5 /* Sources */,
+				1CC6D62A1C2BAA8C00293FD5 /* Frameworks */,
+				1CC6D62B1C2BAA8C00293FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC6D62F1C2BAA8C00293FD5 /* PBXTargetDependency */,
+			);
+			name = "nakama-iosTests";
+			productName = "nakama-iosTests";
+			productReference = 1CC6D62D1C2BAA8C00293FD5 /* nakama-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CC6D6371C2BAA8C00293FD5 /* nakama-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC6D6471C2BAA8C00293FD5 /* Build configuration list for PBXNativeTarget "nakama-iosUITests" */;
+			buildPhases = (
+				1CC6D6341C2BAA8C00293FD5 /* Sources */,
+				1CC6D6351C2BAA8C00293FD5 /* Frameworks */,
+				1CC6D6361C2BAA8C00293FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC6D63A1C2BAA8C00293FD5 /* PBXTargetDependency */,
+			);
+			name = "nakama-iosUITests";
+			productName = "nakama-iosUITests";
+			productReference = 1CC6D6381C2BAA8C00293FD5 /* nakama-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CC6D6111C2BAA8800293FD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Nakama Project";
+				TargetAttributes = {
+					1CC6D6181C2BAA8900293FD5 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = BZ9DUKLT3Q;
+					};
+					1CC6D62C1C2BAA8C00293FD5 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = BZ9DUKLT3Q;
+						TestTargetID = 1CC6D6181C2BAA8900293FD5;
+					};
+					1CC6D6371C2BAA8C00293FD5 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = BZ9DUKLT3Q;
+						TestTargetID = 1CC6D6181C2BAA8900293FD5;
+					};
+				};
+			};
+			buildConfigurationList = 1CC6D6141C2BAA8800293FD5 /* Build configuration list for PBXProject "nakama-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CC6D6101C2BAA8800293FD5;
+			productRefGroup = 1CC6D61A1C2BAA8900293FD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CC6D6181C2BAA8900293FD5 /* nakama-ios */,
+				1CC6D62C1C2BAA8C00293FD5 /* nakama-iosTests */,
+				1CC6D6371C2BAA8C00293FD5 /* nakama-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CC6D6171C2BAA8900293FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC6D6271C2BAA8A00293FD5 /* LaunchScreen.storyboard in Resources */,
+				1CC6D6241C2BAA8A00293FD5 /* Assets.xcassets in Resources */,
+				1CC6D6221C2BAA8900293FD5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC6D62B1C2BAA8C00293FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC6D6361C2BAA8C00293FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CC6D6151C2BAA8900293FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC6D61F1C2BAA8900293FD5 /* ViewController.swift in Sources */,
+				1CC6D61D1C2BAA8900293FD5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC6D6291C2BAA8C00293FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC6D6321C2BAA8C00293FD5 /* nakama_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC6D6341C2BAA8C00293FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC6D63D1C2BAA8C00293FD5 /* nakama_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CC6D62F1C2BAA8C00293FD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CC6D6181C2BAA8900293FD5 /* nakama-ios */;
+			targetProxy = 1CC6D62E1C2BAA8C00293FD5 /* PBXContainerItemProxy */;
+		};
+		1CC6D63A1C2BAA8C00293FD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CC6D6181C2BAA8900293FD5 /* nakama-ios */;
+			targetProxy = 1CC6D6391C2BAA8C00293FD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CC6D6201C2BAA8900293FD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CC6D6211C2BAA8900293FD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CC6D6251C2BAA8A00293FD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CC6D6261C2BAA8A00293FD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CC6D63F1C2BAA8C00293FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CC6D6401C2BAA8C00293FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CC6D6421C2BAA8C00293FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "nakama-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.awong.nakama-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1CC6D6431C2BAA8C00293FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "nakama-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.awong.nakama-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1CC6D6451C2BAA8C00293FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "nakama-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.awong.nakama-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nakama-ios.app/nakama-ios";
+			};
+			name = Debug;
+		};
+		1CC6D6461C2BAA8C00293FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "nakama-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.awong.nakama-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nakama-ios.app/nakama-ios";
+			};
+			name = Release;
+		};
+		1CC6D6481C2BAA8C00293FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "nakama-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.awong.nakama-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "nakama-ios";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1CC6D6491C2BAA8C00293FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "nakama-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.awong.nakama-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "nakama-ios";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CC6D6141C2BAA8800293FD5 /* Build configuration list for PBXProject "nakama-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC6D63F1C2BAA8C00293FD5 /* Debug */,
+				1CC6D6401C2BAA8C00293FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC6D6411C2BAA8C00293FD5 /* Build configuration list for PBXNativeTarget "nakama-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC6D6421C2BAA8C00293FD5 /* Debug */,
+				1CC6D6431C2BAA8C00293FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1CC6D6441C2BAA8C00293FD5 /* Build configuration list for PBXNativeTarget "nakama-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC6D6451C2BAA8C00293FD5 /* Debug */,
+				1CC6D6461C2BAA8C00293FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1CC6D6471C2BAA8C00293FD5 /* Build configuration list for PBXNativeTarget "nakama-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC6D6481C2BAA8C00293FD5 /* Debug */,
+				1CC6D6491C2BAA8C00293FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CC6D6111C2BAA8800293FD5 /* Project object */;
+}
