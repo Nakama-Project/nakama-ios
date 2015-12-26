@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -37,40 +38,77 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZY-sV-ICr">
-                                <rect key="frame" x="20" y="73" width="276" height="121"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="20" y="177" width="276" height="95"/>
+                                <state key="normal" title="Shadow Ball"/>
+                                <connections>
+                                    <action selector="attack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="csw-Il-zpN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzp-sM-sw3">
-                                <rect key="frame" x="20" y="202" width="276" height="121"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="20" y="280" width="276" height="95"/>
+                                <state key="normal" title="Sludge Wave"/>
+                                <connections>
+                                    <action selector="attack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5d6-pp-vsY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUV-JQ-ezb">
-                                <rect key="frame" x="20" y="331" width="276" height="120"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="20" y="383" width="276" height="94"/>
+                                <state key="normal" title="Destiny Bond"/>
+                                <connections>
+                                    <action selector="attack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bQ-Dl-7zL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNd-G4-iBa">
-                                <rect key="frame" x="20" y="459" width="276" height="121"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="20" y="485" width="276" height="95"/>
+                                <state key="normal" title="Protect"/>
+                                <connections>
+                                    <action selector="attack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Stk-a5-J1H"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xa-sL-yTn">
-                                <rect key="frame" x="304" y="73" width="276" height="121"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="304" y="177" width="276" height="95"/>
+                                <state key="normal" title="Earth Power"/>
+                                <connections>
+                                    <action selector="attack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sjL-iB-wuS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAy-F9-MVK">
-                                <rect key="frame" x="304" y="202" width="276" height="121"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="304" y="280" width="276" height="95"/>
+                                <state key="normal" title="Sludge Wave"/>
+                                <connections>
+                                    <action selector="attack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uLl-8q-uYj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g11-zv-ff7">
-                                <rect key="frame" x="304" y="331" width="276" height="120"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="304" y="383" width="276" height="94"/>
+                                <state key="normal" title="Flamethrower"/>
+                                <connections>
+                                    <action selector="attack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4rX-0h-v92"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBk-fc-ZNp">
-                                <rect key="frame" x="304" y="459" width="276" height="121"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="304" y="485" width="276" height="95"/>
+                                <state key="normal" title="Ice Beam"/>
+                                <connections>
+                                    <action selector="attack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7EL-Rc-nqS"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gengar" translatesAutoresizingMaskIntoConstraints="NO" id="RAb-7c-acZ">
+                                <rect key="frame" x="20" y="73" width="96" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RAb-7c-acZ" secondAttribute="height" multiplier="1:1" id="Qtn-wM-ekd"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nidoking" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Z-fd-W4Z">
+                                <rect key="frame" x="484" y="73" width="96" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Q4Z-fd-W4Z" secondAttribute="height" multiplier="1:1" id="hki-8i-9OS"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="RAb-7c-acZ" secondAttribute="leading" id="1vW-yx-cJf"/>
                             <constraint firstItem="8Xa-sL-yTn" firstAttribute="top" secondItem="Xyd-H7-Qx7" secondAttribute="bottom" constant="8" id="271-OP-wxo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RAy-F9-MVK" secondAttribute="trailing" id="2dr-DM-kDt"/>
                             <constraint firstItem="8Xa-sL-yTn" firstAttribute="leading" secondItem="3ZY-sV-ICr" secondAttribute="trailing" constant="8" id="2fM-wC-5SU"/>
@@ -94,6 +132,7 @@
                             <constraint firstItem="uzp-sM-sw3" firstAttribute="top" secondItem="3ZY-sV-ICr" secondAttribute="bottom" constant="8" id="OJb-6e-6Cz"/>
                             <constraint firstItem="zNd-G4-iBa" firstAttribute="height" secondItem="3ZY-sV-ICr" secondAttribute="height" id="Ovy-Yz-RsW"/>
                             <constraint firstItem="yIF-5e-VEi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="POy-TB-okG"/>
+                            <constraint firstItem="8Xa-sL-yTn" firstAttribute="top" secondItem="Q4Z-fd-W4Z" secondAttribute="bottom" constant="8" id="PQF-3A-we4"/>
                             <constraint firstItem="zNd-G4-iBa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="PQn-AL-viw"/>
                             <constraint firstItem="3ZY-sV-ICr" firstAttribute="top" secondItem="Xyd-H7-Qx7" secondAttribute="bottom" constant="8" id="PuR-sM-sAD"/>
                             <constraint firstItem="WEy-8e-gka" firstAttribute="width" secondItem="yIF-5e-VEi" secondAttribute="width" id="QUc-Uq-YsM"/>
@@ -103,6 +142,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="RAy-F9-MVK" secondAttribute="trailing" constant="8" id="VDg-Rh-bop"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dBk-fc-ZNp" secondAttribute="trailing" constant="8" id="VLY-YN-065"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zNd-G4-iBa" secondAttribute="bottom" constant="20" id="b0a-1e-dn0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q4Z-fd-W4Z" secondAttribute="trailing" id="bJm-Pp-550"/>
                             <constraint firstAttribute="leadingMargin" secondItem="PUV-JQ-ezb" secondAttribute="leading" id="bgr-8c-Ssd"/>
                             <constraint firstItem="uzp-sM-sw3" firstAttribute="width" secondItem="3ZY-sV-ICr" secondAttribute="width" id="cmi-Tb-mJf"/>
                             <constraint firstItem="uzp-sM-sw3" firstAttribute="height" secondItem="3ZY-sV-ICr" secondAttribute="height" id="d0c-EW-YFu"/>
@@ -115,7 +155,9 @@
                             <constraint firstItem="uzp-sM-sw3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="k37-ZM-3RW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xyd-H7-Qx7" secondAttribute="trailing" id="lhX-Gy-Iwy"/>
                             <constraint firstItem="RAy-F9-MVK" firstAttribute="top" secondItem="8Xa-sL-yTn" secondAttribute="bottom" constant="8" id="m3t-eh-9Gs"/>
+                            <constraint firstItem="RAb-7c-acZ" firstAttribute="top" secondItem="Xyd-H7-Qx7" secondAttribute="bottom" constant="8" id="nzd-sy-UvZ"/>
                             <constraint firstItem="g11-zv-ff7" firstAttribute="width" secondItem="3ZY-sV-ICr" secondAttribute="width" id="oPx-rJ-Fy9"/>
+                            <constraint firstItem="Q4Z-fd-W4Z" firstAttribute="top" secondItem="Xyd-H7-Qx7" secondAttribute="bottom" constant="8" id="oTZ-Nf-bXZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="g11-zv-ff7" secondAttribute="trailing" id="ogV-C5-4XX"/>
                             <constraint firstItem="dBk-fc-ZNp" firstAttribute="width" secondItem="3ZY-sV-ICr" secondAttribute="width" id="p7a-1Q-zEM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dBk-fc-ZNp" secondAttribute="trailing" id="q2h-Kg-pjb"/>
@@ -123,6 +165,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dBk-fc-ZNp" secondAttribute="bottom" constant="383" id="r9g-a2-Cgo"/>
                             <constraint firstAttribute="leadingMargin" secondItem="uzp-sM-sw3" secondAttribute="leading" id="rcY-U0-CqL"/>
                             <constraint firstAttribute="leadingMargin" secondItem="yIF-5e-VEi" secondAttribute="leading" id="ueh-JS-CcW"/>
+                            <constraint firstItem="3ZY-sV-ICr" firstAttribute="top" secondItem="RAb-7c-acZ" secondAttribute="bottom" constant="8" id="voe-2h-bKI"/>
                             <constraint firstItem="g11-zv-ff7" firstAttribute="leading" secondItem="PUV-JQ-ezb" secondAttribute="trailing" constant="8" id="wOb-CB-MME"/>
                             <constraint firstItem="8Xa-sL-yTn" firstAttribute="width" secondItem="3ZY-sV-ICr" secondAttribute="width" id="xhO-2n-W2W"/>
                             <constraint firstItem="3ZY-sV-ICr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="yjw-iO-8np"/>
@@ -132,13 +175,15 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="POy-TB-okG"/>
+                                <exclude reference="PuR-sM-sAD"/>
                                 <exclude reference="yjw-iO-8np"/>
-                                <exclude reference="k37-ZM-3RW"/>
-                                <exclude reference="hJI-Ev-xbY"/>
-                                <exclude reference="PQn-AL-viw"/>
                                 <exclude reference="Tym-Sg-g63"/>
+                                <exclude reference="k37-ZM-3RW"/>
+                                <exclude reference="271-OP-wxo"/>
                                 <exclude reference="CON-Nu-XUe"/>
+                                <exclude reference="hJI-Ev-xbY"/>
                                 <exclude reference="VDg-Rh-bop"/>
+                                <exclude reference="PQn-AL-viw"/>
                                 <exclude reference="IRC-bT-6xt"/>
                                 <exclude reference="VLY-YN-065"/>
                                 <exclude reference="r9g-a2-Cgo"/>
@@ -146,10 +191,19 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="hitPointsA" destination="yIF-5e-VEi" id="HfF-Pp-2d3"/>
+                        <outlet property="hitPointsB" destination="8bC-Xf-vdC" id="8lC-3l-ddA"/>
+                        <outlet property="turnTracker" destination="Xyd-H7-Qx7" id="sW6-sK-jS5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="440" y="349"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gengar" width="96" height="96"/>
+        <image name="nidoking" width="96" height="96"/>
+    </resources>
 </document>

@@ -10,7 +10,29 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    override func viewDidLoad() {
+    @IBOutlet weak var hitPointsA: UILabel!
+    @IBOutlet var hitPointsB: UIView!
+    @IBOutlet weak var turnTracker: UILabel!
+    
+    private var turnCounter = 0
+
+    private enum Moves
+    {
+        case DestinyBond
+        case EarthPower
+        case Flamethrower
+        case IceBeam
+        case Protect
+        case ShadowBall
+        case SludgeWave
+    }
+
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+    }
+
+    @IBAction func attack(sender: UIButton)
+    {
     }
 }
