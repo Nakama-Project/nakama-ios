@@ -34,5 +34,23 @@ class ViewController: UIViewController
 
     @IBAction func attack(sender: UIButton)
     {
+        switch sender.currentTitle! {
+        case "Destiny Bond":
+            break
+        case "Earth Power":
+            break
+        case "Flamethrower":
+            break
+        case "Ice Beam":
+            break
+        case "Protect":
+            break
+        case "Shadow Ball":
+            break
+        case "Sludge Wave":
+            break
+        default:
+            break
+        }
     }
 }
