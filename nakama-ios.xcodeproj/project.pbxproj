@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000BAD6A398F6FFD91553071 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E78896499E2ED1EC33B5837 /* Pods.framework */; };
 		1CC6D61D1C2BAA8900293FD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6D61C1C2BAA8900293FD5 /* AppDelegate.swift */; };
 		1CC6D61F1C2BAA8900293FD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6D61E1C2BAA8900293FD5 /* ViewController.swift */; };
 		1CC6D6221C2BAA8900293FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC6D6201C2BAA8900293FD5 /* Main.storyboard */; };
@@ -47,6 +48,9 @@
 		1CC6D6381C2BAA8C00293FD5 /* nakama-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nakama-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC6D63C1C2BAA8C00293FD5 /* nakama_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nakama_iosUITests.swift; sourceTree = "<group>"; };
 		1CC6D63E1C2BAA8C00293FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E78896499E2ED1EC33B5837 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC17C74A7298743270EFDAA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EC295F2410CA3E9EC7920CEA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000BAD6A398F6FFD91553071 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				1CC6D6301C2BAA8C00293FD5 /* nakama-iosTests */,
 				1CC6D63B1C2BAA8C00293FD5 /* nakama-iosUITests */,
 				1CC6D61A1C2BAA8900293FD5 /* Products */,
+				F8EF450FA252AA9662667C40 /* Pods */,
+				A4729569864423FD0EACFB4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = "nakama-iosUITests";
 			sourceTree = "<group>";
 		};
+		A4729569864423FD0EACFB4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E78896499E2ED1EC33B5837 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8EF450FA252AA9662667C40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC295F2410CA3E9EC7920CEA /* Pods.debug.xcconfig */,
+				9CC17C74A7298743270EFDAA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CC6D6411C2BAA8C00293FD5 /* Build configuration list for PBXNativeTarget "nakama-ios" */;
 			buildPhases = (
+				364D0E2BCA697D0D26E8D6F6 /* Check Pods Manifest.lock */,
 				1CC6D6151C2BAA8900293FD5 /* Sources */,
 				1CC6D6161C2BAA8900293FD5 /* Frameworks */,
 				1CC6D6171C2BAA8900293FD5 /* Resources */,
+				EE0C64F4724AF79AD44763C0 /* Embed Pods Frameworks */,
+				545DFDE8C5FCEED5B2224AAD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		364D0E2BCA697D0D26E8D6F6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		545DFDE8C5FCEED5B2224AAD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE0C64F4724AF79AD44763C0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1CC6D6151C2BAA8900293FD5 /* Sources */ = {
@@ -400,9 +475,11 @@
 		};
 		1CC6D6421C2BAA8C00293FD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC295F2410CA3E9EC7920CEA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "nakama-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.awong.nakama-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,9 +488,11 @@
 		};
 		1CC6D6431C2BAA8C00293FD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CC17C74A7298743270EFDAA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "nakama-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.awong.nakama-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,6 +566,7 @@
 				1CC6D6431C2BAA8C00293FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1CC6D6441C2BAA8C00293FD5 /* Build configuration list for PBXNativeTarget "nakama-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +575,7 @@
 				1CC6D6461C2BAA8C00293FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1CC6D6471C2BAA8C00293FD5 /* Build configuration list for PBXNativeTarget "nakama-iosUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +584,7 @@
 				1CC6D6491C2BAA8C00293FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
