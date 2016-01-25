@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		000BAD6A398F6FFD91553071 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E78896499E2ED1EC33B5837 /* Pods.framework */; };
 		1CC6D61D1C2BAA8900293FD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6D61C1C2BAA8900293FD5 /* AppDelegate.swift */; };
-		1CC6D61F1C2BAA8900293FD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6D61E1C2BAA8900293FD5 /* ViewController.swift */; };
-		1CC6D6221C2BAA8900293FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC6D6201C2BAA8900293FD5 /* Main.storyboard */; };
 		1CC6D6241C2BAA8A00293FD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC6D6231C2BAA8A00293FD5 /* Assets.xcassets */; };
 		1CC6D6271C2BAA8A00293FD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC6D6251C2BAA8A00293FD5 /* LaunchScreen.storyboard */; };
 		1CC6D6321C2BAA8C00293FD5 /* nakama_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6D6311C2BAA8C00293FD5 /* nakama_iosTests.swift */; };
 		1CC6D63D1C2BAA8C00293FD5 /* nakama_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6D63C1C2BAA8C00293FD5 /* nakama_iosUITests.swift */; };
+		AA2A17501C55CFF4004E121E /* HPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2A174E1C55CFF4004E121E /* HPViewController.swift */; };
+		AA2A17511C55CFF4004E121E /* HPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA2A174F1C55CFF4004E121E /* HPViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +36,7 @@
 
 /* Begin PBXFileReference section */
 		1CC6D6191C2BAA8900293FD5 /* nakama-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nakama-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CC6D61C1C2BAA8900293FD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1CC6D61E1C2BAA8900293FD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1CC6D6211C2BAA8900293FD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CC6D61C1C2BAA8900293FD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		1CC6D6231C2BAA8A00293FD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CC6D6261C2BAA8A00293FD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CC6D6281C2BAA8A00293FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +48,8 @@
 		1CC6D63E1C2BAA8C00293FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E78896499E2ED1EC33B5837 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC17C74A7298743270EFDAA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AA2A174E1C55CFF4004E121E /* HPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPViewController.swift; sourceTree = "<group>"; };
+		AA2A174F1C55CFF4004E121E /* HPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPViewController.xib; sourceTree = "<group>"; };
 		EC295F2410CA3E9EC7920CEA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,9 +104,10 @@
 		1CC6D61B1C2BAA8900293FD5 /* nakama-ios */ = {
 			isa = PBXGroup;
 			children = (
-				1CC6D61C1C2BAA8900293FD5 /* AppDelegate.swift */,
-				1CC6D61E1C2BAA8900293FD5 /* ViewController.swift */,
-				1CC6D6201C2BAA8900293FD5 /* Main.storyboard */,
+				AA2A174D1C55CFB7004E121E /* Models */,
+				AA2A174C1C55CFB2004E121E /* Views */,
+				AA2A174B1C55CFA9004E121E /* Controllers */,
+				AA2A174A1C55CFA4004E121E /* Extensions */,
 				1CC6D6231C2BAA8A00293FD5 /* Assets.xcassets */,
 				1CC6D6251C2BAA8A00293FD5 /* LaunchScreen.storyboard */,
 				1CC6D6281C2BAA8A00293FD5 /* Info.plist */,
@@ -138,6 +139,37 @@
 				3E78896499E2ED1EC33B5837 /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA2A174A1C55CFA4004E121E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AA2A174B1C55CFA9004E121E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1CC6D61C1C2BAA8900293FD5 /* AppDelegate.swift */,
+				AA2A174E1C55CFF4004E121E /* HPViewController.swift */,
+				AA2A174F1C55CFF4004E121E /* HPViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AA2A174C1C55CFB2004E121E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA2A174D1C55CFB7004E121E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F8EF450FA252AA9662667C40 /* Pods */ = {
@@ -259,9 +291,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2A17511C55CFF4004E121E /* HPViewController.xib in Resources */,
 				1CC6D6271C2BAA8A00293FD5 /* LaunchScreen.storyboard in Resources */,
 				1CC6D6241C2BAA8A00293FD5 /* Assets.xcassets in Resources */,
-				1CC6D6221C2BAA8900293FD5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CC6D61F1C2BAA8900293FD5 /* ViewController.swift in Sources */,
+				AA2A17501C55CFF4004E121E /* HPViewController.swift in Sources */,
 				1CC6D61D1C2BAA8900293FD5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,14 +403,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1CC6D6201C2BAA8900293FD5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1CC6D6211C2BAA8900293FD5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1CC6D6251C2BAA8A00293FD5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

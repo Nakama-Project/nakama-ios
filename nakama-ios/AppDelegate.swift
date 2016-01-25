@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import Meteor
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let Meteor = METCoreDataDDPClient(serverURL: NSURL(string: "ws://localhost:3000/websocket")!)
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        Meteor.connect()
+        
+        let frame = UIScreen.mainScreen().bounds
+        window = UIWindow(frame: frame)
+        
+        let hpVC = HPViewController()
+        window?.rootViewController = hpVC
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
