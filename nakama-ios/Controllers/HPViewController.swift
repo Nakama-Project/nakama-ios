@@ -8,17 +8,45 @@
 
 import UIKit
 import Cartography
+import ObjectiveDDP
+
+private let websocketReadyKey = "websocketReady"
 
 class HPViewController: UIViewController {
-
+    
+    let meteor: MeteorClient
     let nakamaLabel = UILabel()
     let hpLabel = UILabel()
     let ghostImage = UIImageView()
+    
+    // MARK: Init
+    
+    init(meteorClient: MeteorClient) {
+        meteor = meteorClient
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: Lifecycle
+    
+    override func viewWillAppear(animated: Bool) {
+        let observingOption = NSKeyValueObservingOptions.New
+        meteor.addObserver(self, forKeyPath: websocketReadyKey, options: observingOption, context: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupNakamaTest()
+    }
+    
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+        if keyPath == websocketReadyKey && meteor.websocketReady {
+            print("Connected to local server")
+        }
     }
     
     private func setupNakamaTest() {

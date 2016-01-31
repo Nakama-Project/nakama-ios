@@ -15,6 +15,7 @@
 		1CC6D63D1C2BAA8C00293FD5 /* nakama_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6D63C1C2BAA8C00293FD5 /* nakama_iosUITests.swift */; };
 		AA2A17501C55CFF4004E121E /* HPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2A174E1C55CFF4004E121E /* HPViewController.swift */; };
 		AA2A17511C55CFF4004E121E /* HPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA2A174F1C55CFF4004E121E /* HPViewController.xib */; };
+		AAE69E9F1C5E8EFC00DA938F /* bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE69E9E1C5E8EFB00DA938F /* bridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		9CC17C74A7298743270EFDAA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AA2A174E1C55CFF4004E121E /* HPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPViewController.swift; sourceTree = "<group>"; };
 		AA2A174F1C55CFF4004E121E /* HPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPViewController.xib; sourceTree = "<group>"; };
+		AAE69E9D1C5E8EFB00DA938F /* nakama-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nakama-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		AAE69E9E1C5E8EFB00DA938F /* bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bridge.m; sourceTree = "<group>"; };
 		EC295F2410CA3E9EC7920CEA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +91,8 @@
 				1CC6D61A1C2BAA8900293FD5 /* Products */,
 				F8EF450FA252AA9662667C40 /* Pods */,
 				A4729569864423FD0EACFB4F /* Frameworks */,
+				AAE69E9D1C5E8EFB00DA938F /* nakama-ios-Bridging-Header.h */,
+				AAE69E9E1C5E8EFB00DA938F /* bridge.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -366,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE69E9F1C5E8EFC00DA938F /* bridge.m in Sources */,
 				AA2A17501C55CFF4004E121E /* HPViewController.swift in Sources */,
 				1CC6D61D1C2BAA8900293FD5 /* AppDelegate.swift in Sources */,
 			);
@@ -502,11 +508,14 @@
 			baseConfigurationReference = EC295F2410CA3E9EC7920CEA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "nakama-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.awong.nakama-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.nakama-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "nakama-ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -515,11 +524,13 @@
 			baseConfigurationReference = 9CC17C74A7298743270EFDAA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "nakama-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.awong.nakama-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.nakama-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "nakama-ios-Bridging-Header.h";
 			};
 			name = Release;
 		};

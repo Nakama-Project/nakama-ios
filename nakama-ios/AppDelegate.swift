@@ -7,26 +7,36 @@
 //
 
 import UIKit
-import Meteor
+import ObjectiveDDP
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-    let Meteor = METCoreDataDDPClient(serverURL: NSURL(string: "ws://localhost:3000/websocket")!)
+    
+    let meteorClient = initMeteor("pre2", "ws://localhost:3000/websocket")
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        Meteor.connect()
         
         let frame = UIScreen.mainScreen().bounds
         window = UIWindow(frame: frame)
         
-        let hpVC = HPViewController()
+        let hpVC = HPViewController(meteorClient: meteorClient)
         window?.rootViewController = hpVC
         window?.makeKeyAndVisible()
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reportConnection", name: MeteorClientDidConnectNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reportDisconnection", name: MeteorClientDidDisconnectNotification, object: nil)
+        
         return true
+    }
+    
+    dynamic private func reportConnection() {
+        print("================> connected to server!")
+    }
+    
+    dynamic private func reportDisconnection() {
+        print("================> disconnected from server!")
     }
 
     func applicationWillResignActive(application: UIApplication) {
