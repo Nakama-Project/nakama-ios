@@ -8,6 +8,8 @@
 
 import UIKit
 import Cartography
+import CoreData
+import Meteor
 
 class HPViewController: UIViewController {
 
@@ -15,11 +17,19 @@ class HPViewController: UIViewController {
     let hpLabel = UILabel()
     let ghostImage = UIImageView()
     
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupNakamaTest()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    // MARK: Setup
     
     private func setupNakamaTest() {
         nakamaLabel.text = "Hello"
@@ -42,6 +52,16 @@ class HPViewController: UIViewController {
         }
         constrain(ghostImage, nakamaLabel) { ghostImage, nakamaLabel in
             ghostImage.bottom == nakamaLabel.top - 40
+        }
+    }
+    
+    // MARK: - Model
+    
+    private var hp: HP? {
+        didSet {
+            guard hp != oldValue else { return }
+            guard hp != nil else { return }
+            print("hp set")
         }
     }
 }

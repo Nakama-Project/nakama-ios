@@ -13,8 +13,10 @@
 		1CC6D6271C2BAA8A00293FD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC6D6251C2BAA8A00293FD5 /* LaunchScreen.storyboard */; };
 		1CC6D6321C2BAA8C00293FD5 /* nakama_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6D6311C2BAA8C00293FD5 /* nakama_iosTests.swift */; };
 		1CC6D63D1C2BAA8C00293FD5 /* nakama_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6D63C1C2BAA8C00293FD5 /* nakama_iosUITests.swift */; };
+		AA1D283B1C55D9C200507EF1 /* HP.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1D28391C55D9C200507EF1 /* HP.swift */; };
 		AA2A17501C55CFF4004E121E /* HPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2A174E1C55CFF4004E121E /* HPViewController.swift */; };
 		AA2A17511C55CFF4004E121E /* HPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA2A174F1C55CFF4004E121E /* HPViewController.xib */; };
+		AA2A17541C55D789004E121E /* Nakama.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA2A17521C55D789004E121E /* Nakama.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +50,10 @@
 		1CC6D63E1C2BAA8C00293FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E78896499E2ED1EC33B5837 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC17C74A7298743270EFDAA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AA1D28391C55D9C200507EF1 /* HP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HP.swift; sourceTree = "<group>"; };
 		AA2A174E1C55CFF4004E121E /* HPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPViewController.swift; sourceTree = "<group>"; };
 		AA2A174F1C55CFF4004E121E /* HPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPViewController.xib; sourceTree = "<group>"; };
+		AA2A17531C55D789004E121E /* Nakama.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nakama.xcdatamodel; sourceTree = "<group>"; };
 		EC295F2410CA3E9EC7920CEA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +172,8 @@
 		AA2A174D1C55CFB7004E121E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AA2A17521C55D789004E121E /* Nakama.xcdatamodeld */,
+				AA1D28391C55D9C200507EF1 /* HP.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -366,7 +372,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2A17541C55D789004E121E /* Nakama.xcdatamodeld in Sources */,
 				AA2A17501C55CFF4004E121E /* HPViewController.swift in Sources */,
+				AA1D283B1C55D9C200507EF1 /* HP.swift in Sources */,
 				1CC6D61D1C2BAA8900293FD5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,7 +513,7 @@
 				INFOPLIST_FILE = "nakama-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.awong.nakama-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.nakama-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -518,7 +526,7 @@
 				INFOPLIST_FILE = "nakama-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.awong.nakama-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamaproject.nakama-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -611,6 +619,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AA2A17521C55D789004E121E /* Nakama.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA2A17531C55D789004E121E /* Nakama.xcdatamodel */,
+			);
+			currentVersion = AA2A17531C55D789004E121E /* Nakama.xcdatamodel */;
+			path = Nakama.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1CC6D6111C2BAA8800293FD5 /* Project object */;
 }
