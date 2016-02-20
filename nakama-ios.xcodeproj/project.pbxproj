@@ -111,6 +111,7 @@
 			children = (
 				AA2A174D1C55CFB7004E121E /* Models */,
 				AA2A174C1C55CFB2004E121E /* Views */,
+				AA42D0741C78F91A00CD3ADB /* ViewModels */,
 				AA2A174B1C55CFA9004E121E /* Controllers */,
 				AA2A174A1C55CFA4004E121E /* Extensions */,
 				1CC6D6231C2BAA8A00293FD5 /* Assets.xcassets */,
@@ -175,6 +176,13 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AA42D0741C78F91A00CD3ADB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		F8EF450FA252AA9662667C40 /* Pods */ = {
