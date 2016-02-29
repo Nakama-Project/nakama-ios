@@ -14,19 +14,19 @@ private let websocketReadyKey = "websocketReady"
 
 class HPViewController: UIViewController {
     
-    let meteor: MeteorClient
-    let nakamaLabel = UILabel()
-    let hpLabel = UILabel()
-    let ghostImage = UIImageView()
+    private var meteor: MeteorClient
+    private let nakamaLabel = UILabel()
+    private let hpLabel = UILabel()
+    private let ghostImage = UIImageView()
     
-    private var nakama: M13MutableOrderedDictionary!
+    private var hpViewModel: HPViewModel? = nil
     
     // MARK: Init
     
     init(meteorClient: MeteorClient) {
         meteor = meteorClient
         super.init(nibName: nil, bundle: nil)
-        nakama = meteor.collections["hp"] as? M13MutableOrderedDictionary
+        hpViewModel = HPViewModel(meteorClient: meteor, nakamaUpdateCallback: updateNakamaLabel, hpUpdateCallback: updateHPLabel)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -39,8 +39,6 @@ class HPViewController: UIViewController {
         let observingOption = NSKeyValueObservingOptions.New
         meteor.addObserver(self, forKeyPath: websocketReadyKey, options: observingOption, context: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didReceiveNakamaUpdate:", name: "hp_added", object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didReceiveHPUpdate:", name: "hp_changed", object: nil)
     }
     
     override func viewDidLoad() {
@@ -55,22 +53,14 @@ class HPViewController: UIViewController {
         }
     }
     
-    // MARK: Notification Handlers
+    // MARK: UI Updates
     
-    dynamic private func didReceiveNakamaUpdate(notification: NSNotification) {
-        // TODO: Figure out when meteor collections actually update so I don't have to do this check
-        if nakama == nil {
-            nakama = meteor.collections["hp"] as? M13MutableOrderedDictionary
-        }
-        guard let newNakama = nakama[0]["nakama"] as? String else { return }
-        nakamaLabel.text = newNakama
-        guard let newHP = nakama[0]["hp"] as? Int else { return }
-        hpLabel.text = "\(newHP)"
+    private func updateNakamaLabel(nakamaText: String) {
+        nakamaLabel.text = nakamaText
     }
     
-    dynamic private func didReceiveHPUpdate(notification: NSNotification) {
-        guard let newHP = nakama[0]["hp"] as? Int else { return }
-        hpLabel.text = "\(newHP)"
+    private func updateHPLabel(hpText: String) {
+        hpLabel.text = hpText
     }
     
     private func setupNakamaTest() {
